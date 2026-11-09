@@ -1,19 +1,20 @@
 name: Infra (bootstrap)
 
-on:
-  pull_request:
-    paths:
-      - 'infra/bootstrap/**'
-      - 'scripts/bootstrap.sh'
-      - 'scripts/infra-with-tf-vars.sh'
-      - 'scripts/write-bootstrap-tfvars.sh'
-      - 'scripts/test/infra-doppler-names-test.sh'
-      - 'scripts/lib/**'
-      - 'scripts/infra-write-backend.sh'
-      - 'scripts/railway-github-access.sh'
-      - '.github/workflows/infra-bootstrap.yml'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - 'infra/bootstrap/**'
+#       - 'scripts/bootstrap.sh'
+#       - 'scripts/infra-with-tf-vars.sh'
+#       - 'scripts/write-bootstrap-tfvars.sh'
+#       - 'scripts/test/infra-doppler-names-test.sh'
+#       - 'scripts/lib/**'
+#       - 'scripts/infra-write-backend.sh'
+#       - 'scripts/railway-github-access.sh'
+#       - '.github/workflows/infra-bootstrap.yml'
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 

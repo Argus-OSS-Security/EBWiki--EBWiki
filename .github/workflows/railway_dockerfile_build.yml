@@ -1,17 +1,18 @@
 ---
 name: Railway Dockerfile build
 
-on:
-  pull_request:
-    paths:
-      - Dockerfile.railway
-      - railway.toml
-      - config/database.railway.yml
-      - Gemfile
-      - Gemfile.lock
-      - .github/workflows/railway_dockerfile_build.yml
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - Dockerfile.railway
+#       - railway.toml
+#       - config/database.railway.yml
+#       - Gemfile
+#       - Gemfile.lock
+#       - .github/workflows/railway_dockerfile_build.yml
+#   workflow_dispatch:
+# 
 permissions:
   contents: read
 
